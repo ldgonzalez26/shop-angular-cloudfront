@@ -65,9 +65,12 @@ export class ManageProductsComponent {
     if (!selectedFile) {
       return;
     }
-
-    this.manageProductsService.uploadProductsCSV(selectedFile).subscribe(() => {
-      this.selectedFile.set(undefined);
-    });
+    // change logic
+    this.manageProductsService
+      .uploadProductsCSV(selectedFile)
+      .subscribe((data) => {
+        console.log(data);
+        this.selectedFile.set(undefined);
+      });
   }
 }
