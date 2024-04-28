@@ -13,7 +13,6 @@ export const environment: Config = {
     bff: 'https://xbkh4hmr01.execute-api.us-east-1.amazonaws.com/dev/',
     cart: 'https://.execute-api.eu-west-1.amazonaws.com/dev',
   },
-
   apiEndpointsEnabled: {
     product: true,
     order: false,
